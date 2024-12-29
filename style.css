@@ -1,0 +1,256 @@
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logoandnavbar a {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #1a73e8, #28a745); 
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; 
+    margin-top: 20px; 
+}
+
+.navbar a {
+    color: whitesmoke;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    background-color: rgba(50, 50, 50, 0.8); 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #1a73e8; 
+    color: white; 
+    transform: scale(1.1); 
+}
+
+.navbar a.active {
+    background-color: #ff8c00;
+    color: white;
+    font-weight: bold;
+}
+
+
+.landing {
+    padding: 150px;
+    background: url(https://static.vecteezy.com/system/resources/thumbnails/042/581/285/small_2x/ai-generated-robotic-arms-in-the-operation-theatre-background-robotic-surgery-background-robot-in-ot-background-surgical-robot-background-photo.jpg) center/cover no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.landing h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.landing p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.about {
+    padding: 50px 20px;
+    background-color: #222;
+    color: #D4AF37; 
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    margin: 600;
+    border-radius: 8px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: #333;
+    color: whitesmoke;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    border-radius: 8px;
+}
+
+.contactdetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contactdetails input,
+.contactdetails button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 40px;
+    width: 250px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contactdetails button {
+    background-color: green;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+}
+
+.contactdetails button:hover {
+    background-color: #4CAF50; 
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+        font-size: 1.1rem;
+        padding: 10px 15px;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+}
+
+.events {
+    padding: 50px 20px;  
+    background-color: #222;  
+    color: #D4AF37; 
+    text-align: center;
+}
+
+
+.eventsheading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center; 
+    margin-top: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: #333;
+    color: whitesmoke;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    border-radius: 8px;
+}
+
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+}
+
+.footer {
+    background-color: #222;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; 
+}
+
+.footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 2rem;  
+    font-weight: bold;  
+    color: #1a73e8;  
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+    font-family: 'Arial', sans-serif;  
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+}
